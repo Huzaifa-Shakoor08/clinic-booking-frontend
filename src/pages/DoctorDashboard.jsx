@@ -91,7 +91,7 @@ const DoctorDashboard = () => {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-2xl font-bold mb-1">
-                Welcome, Dr. {user?.fullName?.split(" ")[0]}! 👨‍⚕️
+               Welcome, {user?.fullName}! 👨‍⚕️
               </h1>
               <p className="text-green-200">
                 Manage your patient appointments from here.
