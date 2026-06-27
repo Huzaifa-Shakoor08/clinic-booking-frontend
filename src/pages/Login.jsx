@@ -39,8 +39,7 @@ const Login = () => {
     <div className="min-h-screen flex">
       
       {/* Left Side — Branding */}
-      <div className="hidden lg:flex w-1/2 bg-gradient-to-br from-blue-600 to-blue-800 flex-col justify-between p-12 animate-fadeInUp">
-        <div>
+<div className="hidden lg:flex w-1/2 bg-gradient-to-br from-blue-600 to-blue-800 flex-col justify-between p-12 animate-fadeInUp overflow-hidden">        <div>
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
               <span className="text-xl">🏥</span>
@@ -78,8 +77,7 @@ const Login = () => {
       </div>
 
       {/* Right Side — Form */}
-      <div className="w-full lg:w-1/2 flex items-center justify-center px-6 py-12 bg-gray-50">
-  <div className="w-full max-w-md animate-fadeInUp">
+<div className="w-full lg:w-1/2 flex items-center justify-center px-6 py-8 bg-gray-50 overflow-y-auto">  <div className="w-full max-w-md animate-fadeInUp">
           
           {/* Mobile Logo */}
           <div className="flex items-center gap-3 mb-8 lg:hidden">
