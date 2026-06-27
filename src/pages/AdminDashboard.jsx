@@ -66,6 +66,12 @@ const AdminDashboard = () => {
 const addDoctor = async () => {
     try {
       // Use plain axios to avoid sending token on register
+  console.log("Registering doctor:", {
+  fullName: doctorForm.fullName,
+  email: doctorForm.email,
+  password: doctorForm.password,
+  role: "Doctor",
+});
       const registerRes = await axios.post(
         "https://clinicbookingsystem-production.up.railway.app/api/auth/register",
         {
