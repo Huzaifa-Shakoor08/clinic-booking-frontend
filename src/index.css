@@ -14,7 +14,13 @@ button:hover {
     transform: translateY(0);
   }
 }
+* {
+  box-sizing: border-box;
+}
 
+body {
+  overflow-x: hidden;
+}
 .animate-fadeInUp {
   animation: fadeInUp 0.5s ease forwards;
 }
