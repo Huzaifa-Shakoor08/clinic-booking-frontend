@@ -63,10 +63,8 @@ const AdminDashboard = () => {
       setMessage({ text: "Delete failed.", type: "error" });
     }
   };
-
-  const addDoctor = async () => {
+const addDoctor = async () => {
     try {
-      // First register the doctor as a user
       const registerRes = await API.post("/auth/register", {
         fullName: doctorForm.fullName,
         email: doctorForm.email,
@@ -74,9 +72,13 @@ const AdminDashboard = () => {
         role: "Doctor",
       });
 
-      // Then create doctor profile
+      // Decode JWT to get userId
+      const token = registerRes.data.token;
+      const payload = JSON.parse(atob(token.split('.')[1]));
+      const userId = parseInt(payload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"]);
+
       await API.post("/doctors", {
-        userId: registerRes.data.userId,
+        userId: userId,
         specialty: doctorForm.specialty,
         bio: doctorForm.bio,
         consultationFee: parseFloat(doctorForm.consultationFee),
