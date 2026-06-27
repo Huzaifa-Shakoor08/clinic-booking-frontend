@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import API from "../services/api";
-
+import axios from 'axios';
 const AdminDashboard = () => {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
@@ -65,12 +65,16 @@ const AdminDashboard = () => {
   };
 const addDoctor = async () => {
     try {
-      const registerRes = await API.post("/auth/register", {
-        fullName: doctorForm.fullName,
-        email: doctorForm.email,
-        password: doctorForm.password,
-        role: "Doctor",
-      });
+      // Use plain axios to avoid sending token on register
+      const registerRes = await axios.post(
+        "https://clinicbookingsystem-production.up.railway.app/api/auth/register",
+        {
+          fullName: doctorForm.fullName,
+          email: doctorForm.email,
+          password: doctorForm.password,
+          role: "Doctor",
+        }
+      );
 
       // Decode JWT to get userId
       const token = registerRes.data.token;
@@ -94,7 +98,8 @@ const addDoctor = async () => {
         bio: "",
         consultationFee: "",
       });
-    } catch {
+    } catch (err) {
+      console.error(err);
       setMessage({ text: "Failed to add doctor.", type: "error" });
     }
   };
