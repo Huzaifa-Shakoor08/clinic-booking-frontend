@@ -7,5 +7,5 @@
 | Role | Email | Password |
 |------|-------|----------|
 | Admin | admin@clinic.com | 123456 |
-| Doctor | ahmed@clinic.com | 123456 |
-| Patient | huzaifa@gmail.com | 123456 |
+| Doctor | hamza@clinic.com | 123456 |
+| Patient | huzaifashakoor@gmail.com | 123456 |
