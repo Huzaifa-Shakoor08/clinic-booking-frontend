@@ -13,13 +13,19 @@
 ## 📸 Screenshots
 
 ### Login Page
-![Login](./screenshots/login.png)
+![Login](./Screenshots/login.png)
+
+### Login Mobile View
+![Login Mobile](./Screenshots/login-mobile.png)
 
 ### Patient Dashboard
-![Patient Dashboard](./screenshots/patient-dashboard.png)
+![Patient Dashboard](./Screenshots/patient-dashboard.png)
+
+### Book Appointment
+![Book Appointment](./Screenshots/patient-dashboard-bookappointment.png)
 
 ### Doctor Dashboard
-![Doctor Dashboard](./screenshots/doctor-dashboard.png)
+![Doctor Dashboard](./Screenshots/doctor-dashboard.png)
 
 ### Admin Dashboard
-![Admin Dashboard](./screenshots/admin-dashboard.png)
+![Admin Dashboard](./Screenshots/admin-dashboard.png)
