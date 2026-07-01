@@ -13,19 +13,19 @@
 ## 📸 Screenshots
 
 ### Login Page
-![Login](./Screenshots/login.png)
+![Login](https://raw.githubusercontent.com/Huzaifa-Shakoor08/ClinicBookingSystem/master/Screenshots/login.png)
 
-### Login Mobile View
-![Login Mobile](./Screenshots/login-mobile.png)
+### Login - Mobile View
+<img src="https://raw.githubusercontent.com/Huzaifa-Shakoor08/ClinicBookingSystem/master/Screenshots/login-mobile.png" width="300">
 
 ### Patient Dashboard
-![Patient Dashboard](./Screenshots/patient-dashboard.png)
+![Patient Dashboard](https://raw.githubusercontent.com/Huzaifa-Shakoor08/ClinicBookingSystem/master/Screenshots/patient-dashboard.png)
 
 ### Book Appointment
-![Book Appointment](./Screenshots/patient-dashboard-bookappointment.png)
+![Book Appointment](https://raw.githubusercontent.com/Huzaifa-Shakoor08/ClinicBookingSystem/master/Screenshots/patient-dashboard-bookappointment.png)
 
 ### Doctor Dashboard
-![Doctor Dashboard](./Screenshots/doctor-dashboard.png)
+![Doctor Dashboard](https://raw.githubusercontent.com/Huzaifa-Shakoor08/ClinicBookingSystem/master/Screenshots/doctor-dashboard.png)
 
 ### Admin Dashboard
-![Admin Dashboard](./Screenshots/admin-dashboard.png)
+![Admin Dashboard](https://raw.githubusercontent.com/Huzaifa-Shakoor08/ClinicBookingSystem/master/Screenshots/admin-dashboard.png)
